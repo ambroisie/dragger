@@ -72,10 +72,9 @@
         defaultPackage = packages.dragger;
 
         devShell = pkgs.mkShell {
-          nativeBuildInputs = with pkgs; [ ]
-          ++ defaultPackage.nativeBuildInputs
-          ++ defaultPackage.buildInputs
-          ;
+          inputsFrom = with packages; [
+            dragger
+          ];
 
           inherit (checks.pre-commit) shellHook;
         };
