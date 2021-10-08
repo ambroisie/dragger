@@ -49,7 +49,7 @@
 
         checks = {
           pre-commit = pre-commit-hooks.lib.${system}.run {
-            src = self;
+            src = ./.;
 
             hooks = {
               clang-format = {
