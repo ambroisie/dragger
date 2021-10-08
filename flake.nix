@@ -85,19 +85,11 @@
         };
       }) // {
       overlay = final: prev: {
-        dragger = with final; stdenv.mkDerivation {
+        dragger = with final; qt5.mkDerivation {
           pname = "dragger";
           version = "0.0.0";
 
           src = self;
-
-          buildInputs = [
-            libsForQt5.qt5.qtbase
-          ];
-
-          nativeBuildInputs = [
-            libsForQt5.qt5.wrapQtAppsHook
-          ];
 
           configurePhase = ''
             qmake
