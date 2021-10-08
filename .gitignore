@@ -1,0 +1,7 @@
+# Nix files
+/result
+/.pre-commit-config.yaml
+
+# Qt files
+/Makefile
+/.qmake.stash
