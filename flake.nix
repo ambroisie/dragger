@@ -87,7 +87,7 @@
       overlay = final: prev: {
         dragger = with final; qt5.mkDerivation {
           pname = "dragger";
-          version = "0.0.0";
+          version = "0.1.0";
 
           src = self;
 
