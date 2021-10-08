@@ -7,4 +7,8 @@ Language: Cpp
 # Force pointers to the type for C++.
 DerivePointerAlignment: false
 PointerAlignment: Left
+
+# Break after every argument or not at all
+BinPackArguments: false
+BinPackParameters: false
 ---
