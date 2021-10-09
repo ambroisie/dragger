@@ -54,10 +54,7 @@
             hooks = {
               clang-format = {
                 enable = true;
-                name = "clang-format";
-                entry = "${pkgs.clang-tools}/bin/clang-format -style=file -i";
-                types = [ "text" "c++" ];
-                language = "system";
+                types_or = [ "c++" ];
               };
 
               nixpkgs-fmt = {
